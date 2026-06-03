@@ -1,13 +1,37 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package DaoImplement;
 
-/**
- *
- * @author HP
- */
-public class DaoImplementAvion {
-    
+import DaoInterfaz.InterfazAvion;
+
+public class DaoImplementAvion extends DaoVehiculo implements InterfazAvion {
+
+    @Override
+    public String transportar() {
+        return "";
+    }
+
+    @Override
+    public float calcularDistancia(float velocidadMax) {
+        int tiempo=1;// una hora
+        float resultado=velocidadMax*tiempo;
+        return resultado;
+    }
+
+    @Override
+    public float calcularDistancia(float velocidadMax, float tiempo) {
+        float resultado=velocidadMax*tiempo;
+        return resultado;
+    }
+
+    @Override
+    public float calcularDistancia(float velocidadMax, float tiempo, float constante) {
+        float resultado=0;
+        if(constante>=0 && constante<=1){
+            resultado=velocidadMax*tiempo*constante;
+        
+        }else{
+            System.out.println("error de constante ");
+        }
+        return resultado;
+    }
+
 }

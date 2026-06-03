@@ -1,13 +1,12 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Interface.java to edit this template
- */
 package DaoInterfaz;
 
-/**
- *
- * @author HP
- */
 public interface InterfazMoto {
-    
+
+    public String transportar();
+
+    public float calcularDistancia(float velocidadMax);
+
+    public float calcularDistancia(float velocidadMax, float tiempo);
+
+    public float calcularDistancia(float velocidadMax, float tiempo, float constante);
 }
