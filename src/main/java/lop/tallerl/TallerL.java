@@ -14,17 +14,17 @@ public class TallerL {
         Vehiculo[] vehiculoList=new Vehiculo[3];
         vehiculoList[0]=vehiculo1;
         vehiculoList[1]=vehiculo2;
-        vehiculoList[2]=vehiculo3;
-        
+        vehiculoList[2]=vehiculo3;       
         
         // velocida maxima
         vehiculoList[0].setVelocidadMax(38);
         vehiculoList[1].setVelocidadMax(56);
         vehiculoList[2].setVelocidadMax(25);
         //tiempo
-        vehiculoList[0].setTiempo(2);
-        vehiculoList[1].setTiempo(2);
-        vehiculoList[2].setTiempo(2);
+        float[] tiempo=new float[3];
+        tiempo[0]=2;
+        tiempo[1]=3;
+        tiempo[2]=6;
         //constante
         float constante[]=new float[3];
         constante[0]=0.4f;
@@ -41,8 +41,8 @@ public class TallerL {
         for (int i = 0; i < vehiculoList.length; i++) {
              System.out.println("Vehiculo de transporte: "+vehiculoList[i].transportar());
             System.out.println("Velocidades Tiempo 1h: "+velocidades[i].calcularDistancia(vehiculoList[i].getVelocidadMax())+" km/h");
-            System.out.println("Velocidades por tiempo: "+velocidades[i].calcularDistancia(vehiculoList[i].getVelocidadMax(),vehiculoList[i].getTiempo())+"km*h");
-            System.out.println("Velocidades por constantes: "+velocidades[i].calcularDistancia(vehiculoList[i].getVelocidadMax(),vehiculoList[i].getTiempo(),constante[i])+"km/h");
+            System.out.println("Velocidades por tiempo: "+velocidades[i].calcularDistancia(vehiculoList[i].getVelocidadMax(),tiempo[i])+"km*h");
+            System.out.println("Velocidades por constantes: "+velocidades[i].calcularDistancia(vehiculoList[i].getVelocidadMax(),tiempo[i],constante[i])+"km/h");
         }
         
         

@@ -1,50 +1,42 @@
-
 package lop.tallerl;
 
-public class Carro extends Vehiculo{
+public class Carro extends Vehiculo {
+
     // transportar
     @Override
-    public String transportar(){
+    public String transportar() {
         return "El carro transporta productos por cada carretera de forma eficiente.";
     }
-     // getter
+    // getter
+
     @Override
-    public String getMatricula(){
+    public String getMatricula() {
         return "--";
     }
 
     @Override
-    public float getVelocidadMax(){
+    public float getVelocidadMax() {
         return super.velocidadMax;
     }
 
     @Override
-    public float getTiempo(){
-        return super.tiempo;
-    }
-
-    @Override
-    public String getMarca(){
+    public String getMarca() {
         return "--";
     }
+
     // setter
     @Override
-    public void setMatricula(String matricula){
-        
+    public void setMatricula(String matricula) {
+
     }
 
     @Override
-    public void setVelocidadMax(float velocidadMax){
-        super.velocidadMax=velocidadMax;
+    public void setVelocidadMax(float velocidadMax) {
+        super.velocidadMax = velocidadMax;
     }
 
     @Override
-    public void setTiempo(float tiempo){
-        super.tiempo=tiempo;
-    }
+    public void setMarca(String marca) {
 
-    @Override
-    public void setMarca(String marca){
-        
     }
 }

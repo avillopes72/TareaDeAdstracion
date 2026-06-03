@@ -4,8 +4,7 @@ package lop.tallerl;
 
 public abstract class Vehiculo {
     private String matricula;
-    protected float velocidadMax;
-    protected float tiempo;
+    protected float velocidadMax;    
     private String marca;
    // transportar
     public abstract String transportar();
@@ -14,16 +13,12 @@ public abstract class Vehiculo {
 
     public abstract float getVelocidadMax();
 
-    public abstract float getTiempo();
-
     public abstract String getMarca(); 
     // setter
 
     public abstract void setMatricula(String matricula) ;
 
-    public abstract void setVelocidadMax(float velocidadMax);
-
-    public abstract void setTiempo(float tiempo) ;
+    public abstract void setVelocidadMax(float velocidadMax);    
 
     public abstract void setMarca(String marca) ;
     

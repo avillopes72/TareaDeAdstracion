@@ -17,12 +17,7 @@ public class Moto extends Vehiculo{
     @Override
     public float getVelocidadMax(){
         return super.velocidadMax;
-    }
-
-    @Override
-    public float getTiempo(){
-        return super.tiempo;
-    }
+    }    
 
     @Override
     public String getMarca(){
@@ -37,12 +32,7 @@ public class Moto extends Vehiculo{
     @Override
     public void setVelocidadMax(float velocidadMax){
         super.velocidadMax=velocidadMax;
-    }
-
-    @Override
-    public void setTiempo(float tiempo){
-        super.tiempo=tiempo;
-    }
+    }    
 
     @Override
     public void setMarca(String marca){
